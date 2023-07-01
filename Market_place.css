@@ -77,10 +77,13 @@ body h1 span {
   border-radius: 15px;
 }
 
-.row-1 .items img {
-  padding: 50px;
-  height: 200px;
-  width: 300px;
+.slide-img {
+  display: none;
+}
+
+.slide-img img {
+  width: 100%;
+  border-radius: 15px;
 }
 
 .row-2 {

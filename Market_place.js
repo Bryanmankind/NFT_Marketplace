@@ -16,4 +16,4 @@ function changeImg() {
   setTimeout(changeImg, 5000);
 }
 
-changeImg();
+// changeImg();

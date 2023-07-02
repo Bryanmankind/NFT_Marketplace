@@ -21,6 +21,9 @@ nav ul li {
   display: inline-block;
   list-style: none;
   padding: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 100px;
 }
 
 nav input {

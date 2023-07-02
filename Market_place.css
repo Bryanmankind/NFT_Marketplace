@@ -78,12 +78,19 @@ body h1 span {
 }
 
 .slide-img {
-  display: none;
+  display: flex;
 }
 
 .slide-img img {
   width: 100%;
+  margin: 0 auto;
   border-radius: 15px;
+  transition: 3s;
+}
+
+.sec,
+.thrd {
+  display: none;
 }
 
 .row-2 {

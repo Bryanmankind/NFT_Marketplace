@@ -1,19 +1,28 @@
-let myIndex = 0;
-const slides = document.getElementsByClassName("slide-img");
+const image_1 = document.querySelectorAll(".img-1");
+const image_2 = document.querySelectorAll(".img-2");
+const image_3 = document.querySelectorAll(".img-3");
 
-function changeImg() {
-  let i;
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+let activeClass = 3; // Set initial activeImg to 3 for image_3
+let nextImage = 1;
+
+setInterval(function () {
+  nextImage = nextImage + 1;
+
+  if (nextImage === 1) {
+    image_2.forEach((image) => image.classList.replace("active", "hidden"));
+    image_3.forEach((image) => image.classList.replace("active", "hidden"));
+    image_1.forEach((image) => image.classList.replace("hidden", "active"));
+    activeImgClass = nextImage;
+  } else if (nextImage === 2) {
+    image_1.forEach((image) => image.classList.replace("active", "hidden"));
+    image_3.forEach((image) => image.classList.replace("active", "hidden"));
+    image_2.forEach((image) => image.classList.replace("hidden", "active"));
+    activeImgClass = nextImage;
+  } else {
+    image_1.forEach((image) => image.classList.replace("active", "hidden"));
+    image_2.forEach((image) => image.classList.replace("active", "hidden"));
+    image_3.forEach((image) => image.classList.replace("hidden", "active"));
+    activeImgClass = nextImage;
+    nextImage = 0;
   }
-  myIndex++;
-
-  if (myIndex > slides.length) {
-    myIndex = 1;
-  }
-  slides[myIndex - 1].style.display = "block";
-
-  setTimeout(changeImg, 5000);
-}
-
-// changeImg();
+}, 3000);

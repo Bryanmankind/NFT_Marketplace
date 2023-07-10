@@ -15,7 +15,7 @@
         <li><a href="#Home"></a>Home</li>
         <li><a href="Explore"></a>Explore</li>
         <li><a href="Create"></a>Upload NFT</li>
-        <li><a href="SignUp"></a>SignUp</li>
+        <li id="Sign-up"><a href="SignUp"></a>SignUp</li>
       </ul>
       <button class="wallet">Connet Wallet</button>
     </nav>
@@ -135,29 +135,53 @@
     <div class="Sign-div">
       <div class="Create-Acc">
         <h4>Fill this form.</h4>
-        <input type="text" name="username" placeholder="username" required />
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          required
-        />
-        <input type="text" name="email" placeholder="email" required />
-        <button type="submit" class="Acc-but">Create Account</button>
-        <ul>
-          <li><a href="login"></a>login</li>
-        </ul>
+        <form action="register">
+          <input type="text" name="username" placeholder="Username" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <input type="text" name="email" placeholder="Email" required />
+          <button type="submit" class="Acc-but">Create Account</button>
+          <p>Login here.</p>
+          <ul>
+            <a href="login">Login</a>
+          </ul>
+        </form>
       </div>
-      <div class="login">
-        <input type="text" name="username" placeholder="username" required />
-        <input
-          type="password"
-          name="password"
-          placeholder="password"
-          required
-        />
+      <div>
+        <form action="Signin">
+          <div class="login">
+            <h4>Welcome to BriTech Nft Marketplace.</h4>
+            <p>Fill this form to login.</p>
+            <input
+              type="text"
+              name="username"
+              placeholder="username"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="password"
+              required
+            />
+            <ul>
+              <li><a href="#Home"></a>Login</li>
+            </ul>
+            <ul>
+              <li>
+                <a href="password"></a>
+                <p>forget password.</p>
+              </li>
+            </ul>
+          </div>
+        </form>
       </div>
     </div>
+
     <script src="Market_place.js"></script>
   </body>
 </html>

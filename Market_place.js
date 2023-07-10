@@ -26,3 +26,11 @@ setInterval(function () {
     nextImage = 0;
   }
 }, 3000);
+
+const SignIn = document.getElementsByClassName("Create-Acc");
+
+const login = document.getElementsByClassName("Sign-form");
+
+SignIn.addEventListener("click");
+
+function showSignUp() {}

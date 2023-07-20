@@ -148,8 +148,12 @@ ul li h3 {
   display: none;
 }
 
+.hidden-2 {
+  display: none;
+}
+
 .Sign-div,
-.login {
+.login{
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -158,21 +162,64 @@ ul li h3 {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
 }
 
-.Create-Acc,
+.Create-Acc {
+  width: 300px;
+  padding: 15px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  height: 300px;
+  border-radius: 40px;
+}
+
 .Signin {
   width: 300px;
   padding: 15px;
   font-family: "Times New Roman", Times, serif;
   background-color: white;
   height: 300px;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
+.Signin h4 {
+  color: black;
+
+}
+.Signin input {
+  font-size: large;
+  margin: 5px auto;
+  border-radius: 5px;
+  text-decoration: none;
+  border-color: #ff004f;
+  padding-inline: 20px;
+} 
+
+.Signin p {
+  color: black;
+}
+
+.Signin ul {
+  position: relative;
+  background-color: #ff004f;
+  height: 15px;
+  width: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 100px;
+}
+
+.Signin ul a {
+  text-decoration: none;
+  font-weight: 100px;
+  justify-content: center;
+  margin: 10px auto;
+  font-size: 10px;
+  color: aqua;
+}                
 .Create-Acc h4 {
   color: black;
 }
 
-.Create-Acc form input {
+.Create-Acc, form input {
   font-size: large;
   margin: 5px auto;
   border-radius: 5px;

@@ -27,10 +27,19 @@ setInterval(function () {
   }
 }, 3000);
 
-const SignIn = document.getElementsByClassName("Create-Acc");
+const SignUpPage = document.getElementById("Sign-up");
+const overLay = document.querySelector(".overlay");
 
 const login = document.getElementsByClassName("Sign-form");
 
-SignIn.addEventListener("click");
+SignUpPage.addEventListener("click", function () {
+  document.querySelector(".Create-Acc").style.display = "block";
+  document.querySelector(".overlay").style.display = "block";
+});
 
-function showSignUp() {}
+overLay.addEventListener("click", function () {
+  document.querySelector(".Create-Acc").style.display = "none";
+  document.querySelector(".overlay").style.display = "none";
+});
+
+

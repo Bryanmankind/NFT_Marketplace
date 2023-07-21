@@ -31,7 +31,6 @@ const SignUpPage = document.getElementById("Sign-up");
 const overLay = document.querySelector(".overlay");
 const LoginPage = document.querySelector(".loginPage")
 const CloseLogin = document.querySelector(".login-1")
-
 const login = document.getElementsByClassName("Sign-form");
 
 SignUpPage.addEventListener("click", function showSignUp() {
@@ -53,8 +52,6 @@ LoginPage.addEventListener("click", function () {
 })
 
 CloseLogin.addEventListener("click", function () {
-  document.querySelector(".login").style.display = "none"
+  document.querySelector(".login").style.display = "none";
   document.querySelector(".overlay").style.display = "none";
-
-
 })

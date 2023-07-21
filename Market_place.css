@@ -144,15 +144,12 @@ ul li h3 {
   border-radius: 15px;
 }
 
-.Sign-div {
-  position: relative;
-}
-
 .hidden-1 {
   display: none;
 }
 
-.Sign-div {
+.Sign-div,
+.login {
   position: absolute;
   z-index: 10;
   top: 50%;
@@ -161,7 +158,8 @@ ul li h3 {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
 }
 
-.Create-Acc {
+.Create-Acc,
+.Signin {
   width: 300px;
   padding: 15px;
   font-family: "Times New Roman", Times, serif;

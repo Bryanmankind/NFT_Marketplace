@@ -41,3 +41,5 @@ overLay.addEventListener("click", function () {
   document.querySelector(".Create-Acc").style.display = "none";
   document.querySelector(".overlay").style.display = "none";
 });
+
+console.log("hello world");

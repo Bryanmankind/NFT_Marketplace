@@ -62,16 +62,42 @@ nav button {
 }
 
 /* ------------------------------------------ Create New Item -------------------------------------- */
-
+.hidden-3 {
+  display: none;
+}
 .Upload-Nft {
-  width: 300px;
-  padding: 15px;
+  justify-content: center;
+  padding: 25px;
+  margin: 15px auto;
   font-family: "Times New Roman", Times, serif;
   background-color: white;
-  height: 300px;
+  width: 600px;
+  height: 500px;
   border-radius: 40px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
+}
+
+.Upload-Nft input {
+  width: 400px;
+  font-size: large;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  border-color: #ff004f;
+  padding: 10px;
+} 
+
+.Upload-Nft button {
+  background-color: aqua;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 150px; 
+  padding: 5px;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
 }
 
 
@@ -178,7 +204,7 @@ nav button {
 }
 
 .Sign-div,
-.login{
+.login, .Upload-Nft{
   position: absolute;
   z-index: 10;
   top: 50%;

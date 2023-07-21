@@ -42,6 +42,8 @@ overLay.addEventListener("click", function () {
   document.querySelector(".Create-Acc").style.display = "none";
   document.querySelector(".overlay").style.display = "none";
   document.querySelector(".login").style.display = "none"
+  document.querySelector(".Upload-Nft").style.display = "none";
+
 
 });
 
@@ -53,5 +55,18 @@ LoginPage.addEventListener("click", function () {
 
 CloseLogin.addEventListener("click", function () {
   document.querySelector(".login").style.display = "none";
+  document.querySelector(".overlay").style.display = "none";
+})
+
+const uplaod_page = document.getElementById('Upload_nft')
+const upload_btn = document.querySelector('.Upload-btn')
+
+uplaod_page.addEventListener('click', function () {
+  document.querySelector(".Upload-Nft").style.display = "block";
+  document.querySelector(".overlay").style.display = "block";
+})
+
+upload_btn.addEventListener('click', function () {
+  document.querySelector(".Upload-Nft").style.display = "none";
   document.querySelector(".overlay").style.display = "none";
 })

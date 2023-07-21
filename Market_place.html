@@ -15,7 +15,7 @@
         <ul>
           <li><a href="#Home"></a>Home</li>
           <li><a href="Explore"></a>Explore</li>
-          <li><a href="Create"></a>Upload NFT</li>
+          <li id="Upload_nft"><a href="Create"></a>Upload NFT</li>
           <li id="Sign-up"><a href="SignUp"></a>SignUp</li>
         </ul>
         <button class="wallet">Connet Wallet</button>
@@ -30,20 +30,20 @@
 
     <!-- --------------------------- Upload Nft --------------------------------------- -->
 
-    <div class="Upload-Nft">
-      <h1>Create New Item.</h1>
-      <p>Image and Video Only.</p>
-
-      <h2>Name</h2>
-      <input type="text" placeholder="item name" required>
-
-      <h2>Supply</h2>
-      <input type="text" placeholder="Number of items that can be minted" required>
-
-      <input type="image" required>
-
-      <button class="wallet">Create</button>
-
+    <div class="Upload-Nft hidden-3">
+      <form action="upload">
+        <h1>Create New Item.</h1>
+        <p>Image and Video Only.</p>
+        <input type="file" multiple required>
+        <h2>Name</h2>
+        <input type="text" placeholder="item name" required>
+  
+        <h2>Supply</h2>
+        <input type="text" placeholder="Number of items that can be minted" required>
+  
+        <button class="Upload-btn" type="submit">Create</button>
+      </form>
+      
     </div>
     
 
@@ -92,7 +92,7 @@
     </div>
     <div class="overlay hidden-1"></div>
 
-    <!-------------------------------- Collection Marketplace ---------------------->
+    <!-------------------------------- Collection Marketplace ------------------------------>
     <div class="collection">
       <h2><span>Collection</span> Gallary</h2>
       <div class="row-1">
